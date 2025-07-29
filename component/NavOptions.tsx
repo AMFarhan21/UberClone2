@@ -28,7 +28,7 @@ const data = [
 const NavOptions = () => {
 
   const googleMapApiKey = process.env.EXPO_PUBLIC_GOOGLE_MAPS_KEY
-  console.log("INI ADALAH GOOGLE MAP API KEY", googleMapApiKey);
+  // console.log("INI ADALAH GOOGLE MAP API KEY", googleMapApiKey);
 
   const dispatch = useDispatch()
   const origin = useSelector(selectOrigin)
@@ -62,8 +62,8 @@ const NavOptions = () => {
         timeout={400}
         enablePoweredByContainer={false}
         onPress={(data, details = null) => {
-          console.log(data)
-          console.log(details)
+          // console.log(data)
+          // console.log(details)
           dispatch(setOrigin({
             location: details?.geometry.location,
             description: data.description

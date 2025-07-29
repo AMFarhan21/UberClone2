@@ -49,8 +49,8 @@ const NavigateCard = ({nextScreen}: {nextScreen: () => void}) => {
                     minLength={1}
                     timeout={400}
                     onPress={(data, details=null) => {
-                        console.log(data)
-                        console.log(details)
+                        // console.log(data)
+                        // console.log(details)
                         dispatch(setDestination({
                             location: details?.geometry.location,
                             description: data.description
